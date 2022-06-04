@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>RePorter</title>
+        <link rel="stylesheet" href="C:\Users\Vignesh\Transport Logistics\RePorter.css">
+        <link rel="icon" href="https://drive.google.com/uc?export=view&id=1mRynLWP5s-Z6o5g8vZbcqk5nHoamXmna">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            div{
+                font-size:25px;
+                font-family: 'Times New Roman', Times, serif;
+            }
+            #addressfrom,#addressto,#shipdate,#shiptime{
+                color:rgb(0, 0, 255);
+                font-size: 25px;
+                font-family: 'Times New Roman', Times, serif;
+            }
+            #name,#mobile{
+                color:rgb(0, 0, 255);
+                font-size: 25px;
+                width:470px;
+                font-family: 'Times New Roman', Times, serif;
+            }
+           
+            #drop{
+                color:rgb(0, 0, 255);
+                width:300px;
+                font-size: 25px;
+                font-family: 'Times New Roman', Times, serif;
+                height:35px;
+            }
+            #check{
+                accent-color:rgb(0, 0,255);
+                width:35px;
+                height:25px;
+            }
+            
+        </style>
+    </head> 
+    <body>
+       <div> 
+          
+        <form action="booked.html" target="_parent" method="post">
+           <label for="name" >Company Name : </label>
+           <input type="text" id="name" maxlength="50" placeholder="Ex: Karikalan"  required></input><br><br>
+           <label for="mobile" >Contact Number : </label>
+           <input type="text" id="mobile" maxlength="50" placeholder="Ex: +919632587410"  required></input><br><br>
+           <label for="drop" >Type of Office Shifting : </label>
+           <select id="drop" required>
+                        <option>10 Squarefeet with 1 floor</option>
+                        <option>50 Squarefeet with 1 floor</option>
+                        <option>100 Squarefeet with 1 floor</option>
+                        <option>50 Squarefeet with 2 floors</option>
+                        <option>50 Squarefeet  with 2 floors</option>
+                        <option>Bigger than above feets</option>
+           </select>
+            <br><br>
+           <label for="shipdate" >Shipping Date : </label>
+           <input type="date" id="shipdate"  required>  </input><br><br>
+           <label for="shiptime" >Shipping Time : </label><input type="time" id="shiptime"  required>  </input><br><br>
+           
+           <label for="addressfrom">Your Company Address  : </label><br>
+           <textarea type="text" id="addressfrom" rows="2" cols="50"  placeholder="Ex:4-1/9,Reddimaniyakaranoor,Elampillai,Salem-637502" required></textarea><br><br>
+           <label for="addressto">Shifting Address  : </label><br>
+           <textarea type="text" id="addressto" rows="2" cols="50"  placeholder="Ex:4-52/8,Maruthinagar,Eastend,Salem-637502"  required></textarea><br>
+        
+           <input type="checkbox" id="check"  required>Are you agree with our Terms and Conditions</input><br><br>
+           <input type="submit" name="submit" id="submit" value="Submit"></input>
+           <a href="office_shifting_form.html" target="_self"><input type="button" name="reset" id="reset" value="Clear"></input></a>
+           <a href="business.html" target="_parent"><input type="button" name="reset" id="reset" value="Back"></input></a><br><br><br><br>
+        </form>
+       
+       </div>
+    </body>
+</html>
